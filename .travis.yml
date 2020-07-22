@@ -5,7 +5,7 @@ services:
 
 
 before_install:
-  - docker build -t schmamthekd/udemydocker -f Dockerfile.dev .
+  - docker build -t schmamthekid/udemydocker -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true schmamthekid/udemydocker npm run test
